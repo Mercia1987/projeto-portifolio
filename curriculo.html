@@ -1,62 +1,265 @@
 <!DOCTYPE html>
-<html lang="br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Portifolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
+<title>Pedro Jr</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #211e29; position: fixed;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-<body>
-    <div>
- 
-       <h1>Mércia dos Santos Souza</h1><br>
-       <img src="IMG_20211006_175133.jpg" alt="" width="100">
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  
+  <!-- Avatar image in top left corner -->
+  <img src="/projeto-portifolio/images/IMG_20211006_175133.jpg" style="width:80%">
+  <div style="padding-top: 25px;"></div>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+    <i class="fa fa-home w3-large"></i>
+    <p>Principal</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+    <i class="fa fa-user w3-large"></i>
+    <p>Sobre mim</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+    <i class="fa fa-briefcase w3-large"></i>
+    <p>Projetos</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity">
+    <i class="fa fa-envelope w3-large"></i>
+    <p>Contato</p>
+  </a>
 
-    </div class="hr_01"><br>
-    <h3>Teste de Qualidade Junior</h3>
-        <ul>
-        <li> <a href="email">mell.sol@hotmail.com</a> 
-        <li> <a href="url">linkedin.com/in/mércia-souza-311266231</a> 
-       <li> <a href="url">https://github.com/Mercia1987/calculator-node-js</a>
-        <li>Tel: (71) 986075720</li>
-    </ul> 
+  <a href="https://www.linkedin.com/in/m%C3%A9rcia-souza-311266231/" " target="_blank" class="fa fa-linkedin w3-hover-opacity" style="zoom: 200%; padding: 10px ;"></a> 
+  <br>
+  <a href="https://github.com/Mercia1987?tab=repositories" " target="_blank" class="fa fa-github w3-hover-opacity" style="zoom: 200%; padding: 5px ;"></a> 
+  <br>
+  <a href="https://web.whatsapp.com/" target="_blank" class="fa fa-whatsapp w3-hover-opacity" style="zoom: 200%; padding: 10px ;"></a> 
+  <br>
+</nav>
 
-    <div>
-        <div> <hr class="hr_02"><br>
-            <h3>Experiência Profissional</h3>
-            <li>Coordenadora de Atendimento na Empresa Fasys Soluções e Serviço Ltda. (2019 a 2020)</li>
-            <li>Supervisora de Teleatendimento no Disque Direitos Humanos na empresa Call tecnologia. (2017 a 2019)</li>
-            <li>Recepcionista no Hospital Português. (2015)</li>
-            <li>Atendente na Embasa - Empresa Baiana de Águas e Saneamento S.A. (2006 a 2015)</li>
-        </ul>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">PRINCIPAL</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">SOBRE MIM</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJETOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTATOS</a>
+  </div>
+</div>
 
-        </div>
-        <div> <hr class="hr_03"><br>
-            <h4>Formação Academica</h4>
-    <ul>
-        <li>Analista de Teste de Software na Ultima School
-        <li>Bacharela em Serviço Social na Faculdade Dom Pedro II.
-        <li>Pós-Graduada em Habilitação em Dependência Química, Família e comunidade, na Faculdade da Cidade.     
-    </ul>
-    <div> <hr class="hr_04"><br>
-        <h4>Habilidades e Competências</h4>
-        <ul>
-            <li>HTML,CSS </li>
-            <li>SQL, Mysql</li>
-            <li>Javascript</li>
-            <li>Testes Manuais</li>
-            <li>Testes Automatizados</li>
-            <li>PhotoShop</li>
-            <li>Teste de Unidade</li>
-            <li>Jest</li>
-            <li>CI/CD</li>
-            <li>GIT</li>
-            
-        </ul>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Mércia </span> Souza</h1>
+    <p>Analista de Testes - SQA.</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-8" id="about">
+    <h2 class="w3-text-light-grey">Sobre mim</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Com mais de 10 anos de experiência em atendimento ao cliente com foco em resolução de problemas, estou agora realizando uma transição para a área de QA como Analista de Testes. Tenho adquirido um amplo conhecimento em diversas ferramentas e metodologias, tais como Javascript, Testes Ágeis com Scrum, SQL, HTML/CSS, NodeJs, Restful API, Git/Github, Swagger, Postman, Docker, BDD/Cucumber, Jira, Confluence, Teste Funcional, Cypress, entre outros. Sinto-me entusiasmado em aplicar essas habilidades em novos projetos e colaborar com equipes multidisciplinares, visando alcançar resultados excelentes e satisfazer plenamente as necessidades da empresa. Meu objetivo consiste em buscar constantemente o aprimoramento das minhas habilidades e conhecimentos na área de QA, com o propósito de me tornar um profissional ainda mais completo e eficiente.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Meus projetos e habilidades</h3>
+    <p class="w3-wide">Projetos de Tecnologia com minha participação</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:5%">0</div>
     </div>
-     
+    <p class="w3-wide">Skills </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:50%">+10</div>
+    </div>
+  
+  <p class="w3-wide">Experiências profissionais</p>
+  <div class="w3-white">
+    <div class="w3-dark-grey" style="height:28px;width:70%">+ de 10 anos de atendimento ao cliente e resolução de problemas</div>
+  </div>
+    <p class="w3-wide">Minhas Formações</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:30%">Graduada em Serviço Social</div>
+    </div>
+  </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">0</span><br>
+        Projetos com minha contribuição
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3+</span><br>
+        Estudos para Testes de Softwares
+      </div>
+
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5+</span><br>
+        Estudos complementares
+      </div>
+    </div>
+
+    <button onclick="window.open('https://drive.google.com/file/d/1LX9XnzKNpcu-QB9JQsfrm6hV27LkMGfM/view?usp=share_link');" class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Currículo
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey" id="photos">Meus projetos desenvolvidos na Ultima School (Link nas imagens)</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Projetos para QA em Testes Manuais e em Projetos</li>
+          <li class="w3-padding-16">Análise de requisitos e casos de uso para criação de Planos e Roteiros de Testes Manuais, <br>
+             Execução de testes, Criação, documentação e Gestão de Defeitos. 
+            <br> <b>Projeto Módulo 1 </b><br>
+            <a href="https://github.com/Mercia1987/Casos-de-teste" target="_blank">
+              <img src="./images/jira.png" style="height:40px;width:110px">
+            </a>
+          
+            <a href="https://github.com/Mercia1987/Casos-de-teste" target="_blank">
+              <img src="./images/confluence.png" style="height:40px;width:150px">
+            </a>
+          </li>
+
+          <li class="w3-padding-16">Análise de Qualidade em Projetos 
+            <br>com HTML, CSS + JavaScript + NodeJS + Git e GiHub 
+            <br> <b>Projeto Módulo 2 </b> <br> 
+            <a href="https://github.com/Mercia1987/projeto_node" target="_blank">
+              <img src="./images/vscode.png" style="height:50px;width:40px">
+            </a>
+            <a href="https://github.com/Mercia1987/projeto-one-piece" target="_blank">          
+              <img src="./images/html css jss.png" style="height:38px;width:100px">  </a> 
+            <a href="https://github.com/Mercia1987/calculator-node-js" target="_blank">         
+            <img src="./images/nodejs.png" style="height:38px;width:80px">  </a> 
+            <a href="https://github.com/Mercia1987/calculator-node-js" target="_blank">
+              <img src="./images/git.png" style="height:38px;width:80px"> </a>
+              <a href="https://github.com/Mercia1987/calculator-node-js" target="_blank">
+                <img src="./images/GitHub.png" style="height:38px;width:80px"> </a>
+          </li>
+
+         <li class="w3-padding-16">Projetos para testes unitários 
+          <br> com NodeJS + Jest + CICD em GitHub Actions  
+          <br> <b>Projeto Módulo 3 </b> <br>
+          <a href="https://github.com/Mercia1987/exercicio_jest" target="_blank">
+            <img src="./images/nodejs.png" style="height:50px;width:100px"> </a>
+            <a href="https://github.com/Mercia1987/exercicio_jest" target="_blank">
+            <img src="./images/jest.png" style="height:50px;width:150px"> </a>
+            <a href="https://github.com/Mercia1987/exercicio_jest" target="_blank">
+            <img src="./images/github actions.png" style="height:50px;width:120px"> </a>
+            <a href="https://github.com/Mercia1987/exercicio_jest" target="_blank">
+              <img src="./images/CICD (V4).png" style="height:100px;width:200px"> </a>
+          </li>
+                   
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Saiba mais...</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Projetos para Testes Automatizados e Exploratórios</li>
+                           
+          </li>
+          <li class="w3-padding-16">Testes de Integração para Microsserviços e Banco de Dados | APIs 
+            <br> Postman + Newman + SQL + GitHub Actions (Docker)
+            <br> <b>Projeto Módulo 4 </b> <br>
+            
+            <a href="https://github.com/Mercia1987" target="_blank">
+            <img src="./images/postman.png" style="height:50px;width:150px"> </a>
+            <a href="./Conteudo de sql.txt">
+              <img src="./images/mysql.png" style="height:40px;width:50px"> </a>
+            <a href="./Conteudo de sql.txt">
+                <img src="./images/github actions.png" style="height:50px;width:100px"> </a>
+
+          </li>
+          <li class="w3-padding-16">Testes E2E Automatizados 
+            <br> BDD (Cucumber) + Cypress + Selenium + GitHub Actions
+            <br> <b>Projeto Módulo 5 </b> <br>
+            <a href="https://github.com/Mercia1987/BDD-22-08" target="_blank">
+            <img src="./images/bdd.png" style="height:50px;width:90px"> </a>
+            <a href="https://github.com/Mercia1987/meu-projeto-cypres" target="_blank">
+            <img src="./images/cypress.png" style="height:50px;width:160px"> </a>
+            <a href="https://github.com/Mercia1987/Projeto-de-Teste-Selenium-com-CucumberJS" target="_blank">
+            <img src="./images/selenium.png" style="height:50px;width:100px"> </a>
+            <a href="https://github.com/Mercia1987/GIT_ACTIONS_NEWMAN" target="_blank">
+            <img src="./images/github actions.png" style="height:50px;width:120px"> </a>
+          </li>
+
+          <li class="w3-padding-16">Testes Exploratórios para Dispositivos Móveis 
+            <br> Emuladores + Análise de Periféricos + Responsividade e Adaptabilidade das telas
+            <br> <b>Projeto Módulo 6 </b> <br>
+            <a href="https://github.com/Mercia1987?tab=repositories" target="_blank">
+            <img src="./images/mob.png" style="height:100px;width:140px"> </a>
+            <a href="https://developer.android.com/studio/test/test-in-android-studio?hl=pt-br">
+              <img src="./images/mobile emulators header.png" style="height:100px;width:160px"> </a>
+              <a href="https://www.emizentech.com/blog/emulator-vs-simulator-for-mobile-testing.html">
+                <img src="./images/Emulator-vs-Simulator.jpg" style="height:100px;width:180px"> </a>
+          
+          </li>
+                  
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Saiba mais...</button>
+          </li>
+        </ul>
+      </div>
+
+      
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    
+    
+  <!-- End About Section -->
+  </div>
+  
+
+
+
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contato</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xlarge w3-margin-right"></i> Salvador, BA</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xlarge w3-margin-right"></i> Tel: +55 71 986075720</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xlarge w3-margin-right"> </i> Email: mell.sol@hotmail.com</p>
+      
+    </div><br>
+    
+
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer COLOQUE O LINK DE SUAS MIDIAS-->
+  <footer class="w3-content w3-padding-32 w3-text-grey w3-xlarge">
+    <a href="https://www.linkedin.com/in/m%C3%A9rcia-souza-311266231/" class="fa fa-linkedin w3-hover-opacity" ></a> 
+    <a href="https://github.com/Mercia1987" class="fa fa-github w3-hover-opacity"></a> 
+
+    
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
 </html>
-    
